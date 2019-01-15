@@ -1,1 +1,1 @@
-execute if score #mcr_elastictime mcr_elastictime matches 1 run function mcr-time:elastictime_tick
+execute if score #mcr_elastictime mcr_elastictime matches 1 run function mcr-time:elastictime
