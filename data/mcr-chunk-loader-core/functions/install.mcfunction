@@ -1,3 +1,7 @@
+# check dependancy
+say Installing...
+execute unless score #mcr_tick mcr_tick = #mcr_tick mcr_tick run tellraw @a ["",{"text":"mcr-bootstrap","bold":true,"color":"green"},{"text":" datapack must be ","color":"green"},{"text":"installed","underlined":true,"color":"green"},{"text":" and ","color":"green"},{"text":"activated","underlined":true,"color":"green"},{"text":"!","color":"green"}]
+
 # create scoreboard
 scoreboard objectives add mcr_rng20 dummy
 scoreboard objectives add mcr_time dummy
@@ -7,37 +11,37 @@ scoreboard objectives add mcr_quest dummy
 scoreboard objectives add mcr_biome dummy
 
 # generate armorstand
-execute unless entity @e[name=mcr_rng_1] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_1\"}"}
-execute unless entity @e[name=mcr_rng_2] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_2\"}"}
-execute unless entity @e[name=mcr_rng_3] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_3\"}"}
-execute unless entity @e[name=mcr_rng_4] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_4\"}"}
-execute unless entity @e[name=mcr_rng_5] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_5\"}"}
-execute unless entity @e[name=mcr_rng_6] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_6\"}"}
-execute unless entity @e[name=mcr_rng_7] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_7\"}"}
-execute unless entity @e[name=mcr_rng_8] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_8\"}"}
-execute unless entity @e[name=mcr_rng_9] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_9\"}"}
-execute unless entity @e[name=mcr_rng_10] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_10\"}"}
-execute unless entity @e[name=mcr_rng_11] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_11\"}"}
-execute unless entity @e[name=mcr_rng_12] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_12\"}"}
-execute unless entity @e[name=mcr_rng_13] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_13\"}"}
-execute unless entity @e[name=mcr_rng_14] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_14\"}"}
-execute unless entity @e[name=mcr_rng_15] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_15\"}"}
-execute unless entity @e[name=mcr_rng_16] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_16\"}"}
-execute unless entity @e[name=mcr_rng_17] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_17\"}"}
-execute unless entity @e[name=mcr_rng_19] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_18\"}"}
-execute unless entity @e[name=mcr_rng_19] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_19\"}"}
-execute unless entity @e[name=mcr_rng_20] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_20\"}"}
+execute unless entity @e[name=mcr_rng_1] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_1\"}"}
+execute unless entity @e[name=mcr_rng_2] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_2\"}"}
+execute unless entity @e[name=mcr_rng_3] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_3\"}"}
+execute unless entity @e[name=mcr_rng_4] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_4\"}"}
+execute unless entity @e[name=mcr_rng_5] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_5\"}"}
+execute unless entity @e[name=mcr_rng_6] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_6\"}"}
+execute unless entity @e[name=mcr_rng_7] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_7\"}"}
+execute unless entity @e[name=mcr_rng_8] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_8\"}"}
+execute unless entity @e[name=mcr_rng_9] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_9\"}"}
+execute unless entity @e[name=mcr_rng_10] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_10\"}"}
+execute unless entity @e[name=mcr_rng_11] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_11\"}"}
+execute unless entity @e[name=mcr_rng_12] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_12\"}"}
+execute unless entity @e[name=mcr_rng_13] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_13\"}"}
+execute unless entity @e[name=mcr_rng_14] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_14\"}"}
+execute unless entity @e[name=mcr_rng_15] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_15\"}"}
+execute unless entity @e[name=mcr_rng_16] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_16\"}"}
+execute unless entity @e[name=mcr_rng_17] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_17\"}"}
+execute unless entity @e[name=mcr_rng_19] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_18\"}"}
+execute unless entity @e[name=mcr_rng_19] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_19\"}"}
+execute unless entity @e[name=mcr_rng_20] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_20\"}"}
 
-execute unless entity @e[name=mcr_biome_rng] summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_chunkloader"],CustomName:"{\"text\":\"mcr_biome_rng\"}"}
+execute unless entity @e[name=mcr_biome_rng] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_chunkloader"],CustomName:"{\"text\":\"mcr_biome_rng\"}"}
 
-execute unless entity @e[name=mcr_biome_1] summon minecraft:armor_stand -14.5, 48.0, -25.5 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_biome", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_biome_1\"}"}
-execute unless entity @e[name=mcr_biome_2] summon minecraft:armor_stand -14.5d,48.0d,56.5d {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_biome", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_biome_2\"}"}
-execute unless entity @e[name=mcr_biome_3] summon minecraft:armor_stand 26.5d,48.0d,15.5d {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_biome", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_biome_3\"}"}
-execute unless entity @e[name=mcr_biome_4] summon minecraft:armor_stand -55.5d,48.0d,15.5d {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_biome", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_biome_4\"}"}
-execute unless entity @e[name=mcr_biome_5] summon minecraft:armor_stand 26.5d,48.0d,-25.5d {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_biome", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_biome_5\"}"}
-execute unless entity @e[name=mcr_biome_6] summon minecraft:armor_stand -55.5d, 48.0d, 56.5d {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_biome", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_biome_6\"}"}
-execute unless entity @e[name=mcr_biome_7] summon minecraft:armor_stand 26.5d, 48.0d, 56.5d {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_biome", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_biome_7\"}"}
-execute unless entity @e[name=mcr_biome_8] summon minecraft:armor_stand -55.5d, 48.0d, -25.5d {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_biome", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_biome_8\"}"}
+execute unless entity @e[name=mcr_biome_1] run summon minecraft:armor_stand -14.5 48.0 -25.5 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_biome", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_biome_1\"}"}
+execute unless entity @e[name=mcr_biome_2] run summon minecraft:armor_stand -14.5 48.0 56.5 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_biome", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_biome_2\"}"}
+execute unless entity @e[name=mcr_biome_3] run summon minecraft:armor_stand 26.5 48.0 15.5 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_biome", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_biome_3\"}"}
+execute unless entity @e[name=mcr_biome_4] run summon minecraft:armor_stand -55.5 48.0 15.5 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_biome", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_biome_4\"}"}
+execute unless entity @e[name=mcr_biome_5] run summon minecraft:armor_stand 26.5 48.0 -25.5 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_biome", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_biome_5\"}"}
+execute unless entity @e[name=mcr_biome_6] run summon minecraft:armor_stand -55.5 48.0 56.5 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_biome", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_biome_6\"}"}
+execute unless entity @e[name=mcr_biome_7] run summon minecraft:armor_stand 26.5 48.0 56.5 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_biome", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_biome_7\"}"}
+execute unless entity @e[name=mcr_biome_8] run summon minecraft:armor_stand -55.5 48.0 -25.5 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_biome", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_biome_8\"}"}
 
 # initialize virtual players (only if needed)
 execute unless score #mcr_time mcr_time = #mcr_time mcr_time run scoreboard players set #mcr_time mcr_time 0
