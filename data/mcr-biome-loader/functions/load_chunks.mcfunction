@@ -1,0 +1,8 @@
+execute as @e[name=mcr_biome_1] if score @s mcr_operation matches 0 if score #mcr_global_operation mcr_operation matches 0 at @s run function mcr-biome-loader:individuals/load_chunk
+execute as @e[name=mcr_biome_2] if score @s mcr_operation matches 0 if score #mcr_global_operation mcr_operation matches 0 at @s run function mcr-biome-loader:individuals/load_chunk
+execute as @e[name=mcr_biome_3] if score @s mcr_operation matches 0 if score #mcr_global_operation mcr_operation matches 0 if score @s mcr_biome matches 1.. at @s run function mcr-biome-loader:individuals/load_chunk
+execute as @e[name=mcr_biome_4] if score @s mcr_operation matches 0 if score #mcr_global_operation mcr_operation matches 0 if score @s mcr_biome matches 1.. at @s run function mcr-biome-loader:individuals/load_chunk
+execute as @e[name=mcr_biome_5] if score @s mcr_operation matches 0 if score #mcr_global_operation mcr_operation matches 0 if score @s mcr_biome matches 1.. at @s run function mcr-biome-loader:individuals/load_chunk
+execute as @e[name=mcr_biome_6] if score @s mcr_operation matches 0 if score #mcr_global_operation mcr_operation matches 0 if score @s mcr_biome matches 1.. at @s run function mcr-biome-loader:individuals/load_chunk
+execute as @e[name=mcr_biome_7] if score @s mcr_operation matches 0 if score #mcr_global_operation mcr_operation matches 0 if score @s mcr_biome matches 1.. at @s run function mcr-biome-loader:individuals/load_chunk
+execute as @e[name=mcr_biome_8] if score @s mcr_operation matches 0 if score #mcr_global_operation mcr_operation matches 0 if score @s mcr_biome matches 1.. at @s run function mcr-biome-loader:individuals/load_chunk

@@ -1,0 +1,17 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "#X#",
+        "O@O",
+        "#X#"
+    ],
+    "key": {
+        "@": { "item": "minecraft:red_stained_glass_pane" },
+        "O": { "item": "minecraft:blaze_spawn_egg" },
+        "X": { "item": "minecraft:ender_eye" },
+        "#": { "item": "minecraft:magma_block" }
+    },
+    "result": {
+        "item": "minecraft:red_stained_glass"
+    }
+}

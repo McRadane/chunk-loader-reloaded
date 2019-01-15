@@ -1,0 +1,2 @@
+execute if score #mcr_lightcycle mcr_elastictime matches 0 run gamerule doDaylightCycle true
+execute if score #mcr_lightcycle mcr_elastictime matches 0 run scoreboard players set #mcr_lightcycle mcr_elastictime 1
