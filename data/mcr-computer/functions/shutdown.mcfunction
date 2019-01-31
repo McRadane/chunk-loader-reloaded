@@ -1,0 +1,1 @@
+scoreboard players reset @s mcr_computer_cpu

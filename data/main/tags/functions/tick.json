@@ -1,5 +1,6 @@
 {
     "values": [
-        "mcr-time:tick"
+        "mcr-time:tick",
+        "mcr-computer:tick"
     ]
 }

@@ -9,6 +9,7 @@ scoreboard objectives add mcr_operation dummy
 scoreboard objectives add mcr_elastictime dummy
 scoreboard objectives add mcr_quest dummy
 scoreboard objectives add mcr_biome dummy
+scoreboard objectives add mcr_computer_cpu dummy
 
 # generate armorstand
 execute unless entity @e[name=mcr_rng_1] run summon minecraft:armor_stand 0 0 0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,Tags:["mcr_rng", "mcr_chunkloader"],CustomName:"{\"text\":\"mcr_rng_1\"}"}
@@ -62,8 +63,22 @@ execute unless score #mcr_quest_block mcr_quest = #mcr_quest_block mcr_quest run
 execute unless score #mcr_quest_biome mcr_quest = #mcr_quest_biome mcr_quest run scoreboard players set #mcr_quest_biome mcr_quest 0
 execute unless score #mcr_quest_size mcr_quest = #mcr_quest_size mcr_quest run scoreboard players set #mcr_quest_size mcr_quest 0
 
+execute unless score #mcr_quest_fire mcr_quest = #mcr_quest_fire mcr_quest run scoreboard players set #mcr_quest_fire mcr_quest 0
+execute unless score #mcr_quest_forest mcr_quest = #mcr_quest_forest mcr_quest run scoreboard players set #mcr_quest_forest mcr_quest 0
+
 execute unless score #mcr_biome_cpt mcr_biome = #mcr_biome_cpt mcr_biome run scoreboard players set #mcr_biome_cpt mcr_biome 0
 execute unless score #mcr_biome_max mcr_biome = #mcr_biome_max mcr_biome run scoreboard players set #mcr_biome_max mcr_biome 100
+
+execute unless score #mcr_cpu_view1 mcr_computer_cpu = #mcr_cpu_view1 mcr_computer_cpu run scoreboard players set #mcr_cpu_view1 mcr_computer_cpu 5
+execute unless score #mcr_cpu_view2 mcr_computer_cpu = #mcr_cpu_view2 mcr_computer_cpu run scoreboard players set #mcr_cpu_view2 mcr_computer_cpu 2
+execute unless score #mcr_cpu_view3 mcr_computer_cpu = #mcr_cpu_view3 mcr_computer_cpu run scoreboard players set #mcr_cpu_view3 mcr_computer_cpu 2
+execute unless score #mcr_cpu_view4 mcr_computer_cpu = #mcr_cpu_view4 mcr_computer_cpu run scoreboard players set #mcr_cpu_view4 mcr_computer_cpu 7
+execute unless score #mcr_cpu_view5 mcr_computer_cpu = #mcr_cpu_view5 mcr_computer_cpu run scoreboard players set #mcr_cpu_view5 mcr_computer_cpu 7
+execute unless score #mcr_cpu_view6 mcr_computer_cpu = #mcr_cpu_view6 mcr_computer_cpu run scoreboard players set #mcr_cpu_view6 mcr_computer_cpu 7
+execute unless score #mcr_cpu_view7 mcr_computer_cpu = #mcr_cpu_view7 mcr_computer_cpu run scoreboard players set #mcr_cpu_view7 mcr_computer_cpu 5
+
+execute unless score #mcr_cpu_view mcr_computer_cpu = #mcr_cpu_view mcr_computer_cpu run scoreboard players set #mcr_cpu_view mcr_computer_cpu 5
+
 
 scoreboard players set @e[name=mcr_rng_1] mcr_rng20 1
 scoreboard players set @e[name=mcr_rng_2] mcr_rng20 2
